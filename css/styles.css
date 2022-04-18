@@ -42,11 +42,11 @@ margin: 0 auto;
 }
 
 
-.header-list, .about-list, .work-list, .team-list, .address-list, .section-list, .project-list{
+.header-list, .about-list, .work-list, .team-list, .team-soc-list,.address-list, .section-list, .project-list{
     list-style: none;
 }
 
-.header-logo,.header-link, .footer-logo, .header-mail, .header-tel,  .address-mail, .address-tel {
+.header-logo,.header-link,.team-soc-link,.footer-logo, .header-mail, .header-tel,  .address-mail, .address-tel {
     text-decoration: none;
 }
 
@@ -155,6 +155,21 @@ color: var(--accent-color)
 }
 
 /*--------HERO-------*/
+
+.hero{
+    background-color: #2F303A;
+    max-width: 1600px;
+    max-height: 600px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), 
+    url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    padding-top: 200px;
+    padding-bottom: 200px;
+    }
+        
 
 
 .hero{
@@ -341,6 +356,40 @@ background: #FFFFFF;
     margin-bottom: 0;
 }
 
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+
+}
+
+.team-soc-item + .team-soc-item{
+margin-left: 10px;
+}
+
+.team-soc-link {
+width: 44px;
+height: 44px;
+background-color: #2196F3;
+border-radius: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+fill:#AFB1B8; 
+}
+
+.team-soc-link :hover{
+background-color: #2196F3 ;
+fill: #FFFFFF;   
+}
+
+.team-soc-link :focus{
+background-color: #2196F3 ;
+fill: #FFFFFF;   
+}
+    
+
+
 /*--------FOOTER-------*/
 
 .footer{
@@ -510,9 +559,3 @@ line-height: 1.88;
 letter-spacing: 0.03em;
 color: #757575;
 }
-
-
-
-
-
-
