@@ -488,6 +488,16 @@ flex-wrap: wrap;
 width: 170px;
 height: 92px;
 display: flex;
+border-radius: 4px; 
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+
+.box{
+width: 170px;
+height: 92px;
+display: flex;
 border: 1px solid #afb1b8;
 border-radius: 4px; 
 justify-content: center;
@@ -495,16 +505,17 @@ align-items: center;
 cursor: pointer;
 }
 
-.clients-item + .clients-item{
+
+.box + .box{
 margin-left: 30px;
 }
 
-.clients-item :hover{
-fill: #2196F3;
+.box :hover{
+border-color: #2196F3;
 }
-    
-.clients-item :focus{
-fill: #2196F3;
+
+.box :focus{
+border-color: #2196F3;
 }
 
 .clients-icon :hover{
@@ -514,6 +525,7 @@ fill: #2196F3;
 .clients-icon :focus{
 fill: #2196F3;
 }
+
 .clients-icon{
 width: 106px;
 height: 60px;
@@ -674,6 +686,10 @@ padding-bottom: 94px;
 
 .section-btn:hover,
 .section-btn:focus{
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+0px 1px 2px rgba(0, 0, 0, 0.08), 
+0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
 color: var(--first-btn-color);
 background-color:var(--accent-color)
 }
