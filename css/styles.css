@@ -500,15 +500,20 @@ cursor: pointer;
 margin-left: 30px;
 }
 
+.clients-item{
+width: 170px;
+height: 92px;
+border-color: #afb1b8;
+}
 
-.clients-item :hover,
-.clients-item :focus{
-border: #2196F3;
+.clients-item:hover,
+.clients-item:focus{
+border-color: #2196F3;
 }
    
 
-.clients-icon :hover,
-.clients-icon :focus{
+.clients-icon:hover,
+.clients-icon:focus{
 fill: #2196F3;
 }
 
@@ -754,16 +759,20 @@ color: #212121;
 
 .section-text{
 font-weight: 400;
- font-size: 16px;
+font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.03em;
 color: #757575;
 }
 
 .section-item:hover{
-    box-shadow:0px 1px 1px rgba(0, 0, 0, 0.12), 
-    0px 4px 4px rgba(0, 0, 0, 0.06), 
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+box-shadow:0px 1px 1px rgba(0, 0, 0, 0.12), 
+0px 4px 4px rgba(0, 0, 0, 0.06), 
+1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+
+
+
 
 
